@@ -11,5 +11,7 @@ public interface IBackEndService {
     /**
      * Method to Register User
      */
-    public UserDetails registerUser(UserDetails userDetails) throws BackEndException;
+    UserDetails registerUser(UserDetails userDetails) throws BackEndException;
+
+    UserDetails loginUser(UserDetails userDetails) throws BackEndException;
 }
